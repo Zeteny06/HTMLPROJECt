@@ -10,5 +10,6 @@ Zétény:
   - Dall-e.html
   - Whisper.html
   - gpt 4.0.html
-közös:
+
+Közös:
   - css
