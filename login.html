@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Login</h1>
+      <form>
+        <label for="username">Felhasználónév:</label>
+        <input type="text" id="username" name="username"><br><br>
+        <label for="password">Jelszó:</label>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="button" value="Login" onclick="checkLogin()">
+      </form>
+    </div>
+
+    <script>
+      function checkLogin() {
+        // Get the username and password from the form
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        // Check if the username and password are valid
+        if (username == "user" && password == "password") {
+          // Redirect to the main page
+          window.location.href = "index.html";
+        } else {
+          // Display an error message
+          alert("Felhasználónév vagy jelszó érvénytelen.");
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -50,7 +50,7 @@ body {
   
   ul li a:hover,
   ul li a:focus {
-    color: #333;
+    color: #838383;
   }
   
   /* Style the footer */
@@ -61,4 +61,6 @@ body {
     padding: 20px;
     margin-top: 50px;
   }
-  
+.nav-item{
+  color:rgb(155, 155, 50);
+ }
