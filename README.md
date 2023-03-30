@@ -13,6 +13,7 @@ Zétény:
 
 Közös:
   - css
+
 Turbo:
   - A GPT-3.5 Turbo egy nyelvmodellező modul, amely a GPT-3 alapjaira épül, de nagyobb teljesítményt nyújt. Ez az új modell két és fél-szer nagyobb adathalmazzal rendelkezik, mint elődje, ami lehetővé teszi számára, hogy nagyobb pontossággal és sokoldalúsággal dolgozzon. Ezenkívül a GPT-3.5 Turbo képes többféle feladatot végrehajtani, mint például a szöveggenerálás, a fordítás és az automatikus válaszadás.
 
