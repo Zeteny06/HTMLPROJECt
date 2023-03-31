@@ -2,7 +2,7 @@
 Az Open Ai chat-gpt-je, egyéb modulok(pl:gpt 3.5 turbo,gpt 4.0, Whisper,Dall-e) bemumtatása, képeségeik,limiteik,használata
 
 Zétény:
-  - main.html
+  - index.html
   - gpt 3.5.html
   - login.html
  
