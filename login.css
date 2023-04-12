@@ -93,4 +93,14 @@
   input[type="button"]:hover {
     background-color: #45a049;
   }
-  
+
+footer {
+  background-color: #333;
+            color: #fff;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 10%;
+}

@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="login2.css">
     <link rel="stylesheet" href="login.css">
   </head>
   <body>
-    <div class="container">
-      <h1>Login</h1>
+    <div class="container form-container" id="formContainer">
+      <h1 class="headning" id="heading">Login</h1>
       <form>
         <label for="username">Felhasználónév:</label>
         <input type="text" id="username" name="username"><br><br>
@@ -19,22 +20,39 @@
         <input type="button" value="Login" onclick="checkLogin()">
       </form>
     </div>
+    <footer class="footing" id="footer">
+      <div class="slider-container " id="sliderContainer" onclick="toggleDarkMode()">
+        <div class="slider-button" id="sliderButton"></div>
+    </div>
+    </footer>
+  </div>
 
     <script>
       function checkLogin() {
-        // Get the username and password from the form
         var username = document.getElementById("username").value;
         var password = document.getElementById("password").value;
-
-        // Check if the username and password are valid
         if (username == "user" && password == "password") {
-          // Redirect to the main page
           window.location.href = "index.html";
         } else {
-          // Display an error message
           alert("Felhasználónév vagy jelszó érvénytelen.");
         }
       }
+      function toggleDarkMode() {
+            var body = document.body;
+            var sliderContainer = document.getElementById("sliderContainer");
+            var sliderButton = document.getElementById("sliderButton");
+            var formContainer = document.getElementById("formContainer");
+            var headning = document.getElementById("heading");
+            var footing = document.getElementById("footer");
+            
+            body.classList.toggle("dark-mode");
+            sliderContainer.classList.toggle("dark-mode");
+            sliderButton.classList.toggle("dark-mode");
+            formContainer.classList.toggle("dark-mode");
+            headning.classList.toggle("dark-mode");
+            footing.classList.toggle("dark-mode");
+        }
     </script>
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

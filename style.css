@@ -1,8 +1,8 @@
 /* Set the font family and background color */
 body {
     font-family: Arial, sans-serif;
-    background: rgb(18,15,79);
-    background: radial-gradient(circle, rgba(18,15,79,1) 0%, rgba(106,106,177,1) 37%, rgba(71,71,154,1) 48%, rgba(0,212,255,1) 100%);
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(154,206,217,1) 25%, rgba(132,236,235,1) 50%, rgba(154,206,217,1) 75%, rgba(0,0,0,1) 100%);
   }
   
   /* Style the navigation bar */
