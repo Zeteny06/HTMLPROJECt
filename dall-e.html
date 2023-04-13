@@ -4,51 +4,142 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>DALL-E</title>
 </head>
 <body>
-    <h2>A DALL·E 2 eredeti, valósághű képeket és művészetet tud létrehozni szöveges leírásból. Fogalmakat, attribútumokat és stílusokat kombinálhat.</h2>
-    <p>
-        A DALL-E először 2021 elején jelent meg, de csak szeptember 28-án tették elérhetővé a DALL-E 2 frissített verzióját, várólista nélkül. Az eredeti DALL-E képeket tudott generálni szöveges leírásokból, de a DALL-E 2 valósághűbb és pontosabb képeket tud generálni négyszer jobb felbontással. Az OpenAI azt állítja, hogy a DALL-E 2 elég intelligens ahhoz, hogy objektumokat, fogalmakat és stílusokat kombináljon; másodperceken belül 10 különböző képet tud generálni.
-    </p>
-    <p>
-        A DALL-E-2 egy mesterséges intelligencia képgenerátor, amely jól jöhet azokban az iparágakban, ahol gyakori a próbálkozás és a hiba. A DALL-E-2 egy mesterséges intelligencia képgenerátor, amely szöveges promptok segítségével képes képeket létrehozni. A DALL-E-2 segít leegyszerűsíteni az új elemek létrehozásának folyamatát azáltal, hogy szöveges leírások használatával megtudhatja, hogyan fog kinézni egy ruha, szín vagy más elem, mielőtt elkészítené.
-    </p>
-    <p>
-        A készítők remélik, hogy a DALL·E 2 képessé teszi az embereket a kreatív kifejezésre. A DALL·E 2 abban is segít megérteni, hogy a fejlett mesterséges intelligencia rendszerek hogyan látják és értik a világunkat, ami kritikus fontosságú küldetésük, az emberiség javát szolgáló AI létrehozása szempontjából.
-    </p>
-    <ul>
-        A Dall-E-2 képességei
-    </ul>
-        <li>
-            1 Számos objektum rajzolása
-            
-            <p>
-                Új nehézséget jelent több objektum, jellemzőik és térbeli kapcsolataik egyszerre történő irányítása.
-            </p>
-        </li>
-        <li>
-            2. A jellemzők kezelése
-
-            <p>
-                A DALLE képessége az objektum számos tulajdonságának megváltoztatására, valamint a megjelenés gyakoriságára.
-            </p>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">My Bootstrap Page</a>
+            <button class="navbar-toggler text-bg-light" type="button" data-bs-toggle="collapse"data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active1" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="row">
+          <div class="col-md-8">
+          </div>
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://via.placeholder.com/800x400?text=Slide+1" class="d-blockw-100" alt="Slide 1">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://via.placeholder.com/800x400?text=Slide+2" class="d-blockw-100" alt="Slide 2">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://via.placeholder.com/800x400?text=Slide+3" class="d-blockw-100" alt="Slide 3">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <div class="bg-dark container-fluid rounded bg-opacity-10">
+            <div class="row">
+                <h2>A DALL·E 2 eredeti, valósághű képeket és művészetet tud létrehozni szövegesleírásból. Fogalmakat, attribútumokat és stílusokat kombinálhat.</h2>
+                <p>
+                    A DALL-E-2 egy mesterséges intelligencia képgenerátor, amely jól jöhet azokbanaz iparágakban, ahol gyakori a próbálkozás és a hiba. A DALL-E-2 egy mesterségesintelligencia képgenerátor, amely szöveges promptok segítségével képes képeketlétrehozni. A DALL-E-2 segít leegyszerűsíteni az új elemek létrehozásánakfolyamatát azáltal, hogy szöveges leírások használatával megtudhatja, hogyan fogkinézni egy ruha, szín vagy más elem, mielőtt elkészítené.
+                </p>
+                <p>
+                    A DALL-E először 2021 elején jelent meg, de csak szeptember 28-án tettékelérhetővé a DALL-E 2 frissített verzióját, várólista nélkül. Az eredeti DALL-Eképeket tudott generálni szöveges leírásokból, de a DALL-E 2 valósághűbb éspontosabb képeket tud generálni négyszer jobb felbontással. Az OpenAI aztállítja, hogy a DALL-E 2 elég intelligens ahhoz, hogy objektumokat, fogalmakatés stílusokat kombináljon; másodperceken belül 10 különböző képet tud generálni.
+                </p>
+                <p>
+                    A készítők remélik, hogy a DALL·E 2 képessé teszi az embereket a kreatívkifejezésre. A DALL·E 2 abban is segít megérteni, hogy a fejlett mesterségesintelligencia rendszerek hogyan látják és értik a világunkat, ami kritikusfontosságú küldetésük, az emberiség javát szolgáló AI létrehozása szempontjából.
+                </p>
+                <h2>
+                    A Dall-E-2 képességei:
+                </h2>
+                <div class="container" data-bs-theme="light">
+                    <div class="card text-bg-light text-dark col-11">
+                        <div class="card-header">
+                            Számos objektum rajzolása
+                        </div>
+                        <div class="card-body">
+                          <blockquote class="blockquote mb-0">
+                            <p>
+                                Új nehézséget jelent több objektum, jellemzőik és térbeli kapcsolataikegyszerre történő irányítása.</p>
+                          </blockquote>
+                        </div>
+                      </div>
+                      <div class="card text-bg-light text-dark col-11">
+                        <div class="card-header">
+                            A jellemzők kezelése
+                        </div>
+                        <div class="card-body">
+                          <blockquote class="blockquote mb-0">
+                            <p>
+                                A DALLE képessége az objektum számos tulajdonságának megváltoztatására,valamint a megjelenés gyakoriságára.</p>
+                          </blockquote>
+                        </div>
+                      </div>
+                      <div class="card text-bg-light text-dark col-11">
+                        <div class="card-header">
+                            A háromdimenziós és perspektívák megjelenítése
+                        </div>
+                        <div class="card-body">
+                          <blockquote class="blockquote mb-0">
+                            <p>
+                                A DALLE egy másik funkciója a jelenet perspektívájának és 3D-smegjelenítési stílusának szabályozása.</p>
+                          </blockquote>
+                        </div>
+                      </div>
+                      <div class="card text-bg-light text-dark col-11">
+                        <div class="card-header">
+                            A szerkezet megjelenítése belül és kívül egyaránt
+                        </div>
+                        <div class="card-body">
+                          <blockquote class="blockquote mb-0">
+                            <p>
+                                A DALLE képessége belső és külső szerkezetek ábrázolásárakeresztmetszeti nézetekkel és
+                                közeli fotókkal</p>
+                          </blockquote>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
         
-        </li>
-        <li>
-            3. A háromdimenziós és perspektívák megjelenítése
-
-            <p>
-                A DALLE egy másik funkciója a jelenet perspektívájának és 3D-s megjelenítési stílusának szabályozása.
-            </p>
-        </li>
-        <li>
-            4. A szerkezet megjelenítése belül és kívül egyaránt
-
-            <p>
-                A DALLE képessége belső és külső szerkezetek ábrázolására keresztmetszeti nézetekkel és 
-                közeli fotókkal
-            </p>
-        </li>
+        <footer>
+          <p>&copy; 2023 My Bootstrap Page</p>
+        </footer>
+    </div>        
 </body>
 </html>
