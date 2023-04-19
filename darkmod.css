@@ -1,13 +1,11 @@
 body {
     background-color: #fff;
-    color: #000;
     transition: background-color 0.5s, color 0.5s;
 }
 
 /* Dark mode styles */
 body.dark-mode {
     background-color: #333;
-    color: #fff;
 }
 
 /* Slider container */
@@ -42,30 +40,6 @@ body.dark-mode {
 .slider-container.dark-mode .slider-button {
     background-color: #000;
     transform: translateX(50px);
-}
-
-/* Form container */
-.form-container {
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Form input */
-input[type="text"], textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
-/* Form label */
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-/* Dark mode styles for form */
-.form-container.dark-mode {
-    color: #000000;
 }
 .headning{
     color: #000;
