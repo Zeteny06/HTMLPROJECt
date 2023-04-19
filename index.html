@@ -6,41 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Bootstrap Page</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylesheet" href="style.css"> -->
   </head>
   <body>
-    <div class="container">
-      <!-- <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">My Bootstrap Page</a>
-          <button class="navbar-toggler text-bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse " id="navbarNav">
-            <ul class="navbar-nav">
+    <div class="container"> 
+      <nav class="navbar fixed-top mx-5">
+        <!-- <a class="navbar-brand" href="#">Offcanvas navbar</a> -->
+        <button class="navbar-toggler" type="button" id="navbutton" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <a class="navbar-brand" href="#" id="logo">
+              <img src="képek/black.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top" id="imgClickAndChange">
+              Open AI
+            </a>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body" id="canvasbody">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                <a class="nav-link active1" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" id="lista" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" id="lista2" href="#">Link</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
+              <div class="slider-container position-absolute bottom-0 " id="sliderContainer" onclick="toggleDarkMode()">
+                <div class="slider-button" id="sliderButton"></div>
+            </div>
           </div>
         </div>
-      </nav> -->
-      
-      <h1 class="text-3xl font-bold underline Rose-600">
-        Hello world!
-      </h1>
-      <div class="row">
-        <div class="col-md-8">
-          <h1>Welcome to my Bootstrap page</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lobortis, mauris vel malesuada consectetur, velit odio sodales enim, vel commodo justo nisl sit amet mauris.</p>
-        </div>
+    </nav>
         <div id="carouselExampleCaptions" class="carousel slide">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -79,21 +75,10 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-        <div class="col-md-4">
-          <h3>Related Links</h3>
-          <ul>
-            <li><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
-            <li><a href="#">Link 3</a></li>
-          </ul>
-        </div>
-      </div>
-      
       <footer>
-        <p>&copy; 2023 My Bootstrap Page</p>
       </footer>
     </div>
-    
+    <script src="script.js"></script>
     <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
