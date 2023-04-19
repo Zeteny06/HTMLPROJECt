@@ -16,11 +16,12 @@ body {
     color: #fff;
   }
    */
-  /* .navbar-nav > li > a:hover,
-  .navbar-nav > li > a:focus {
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus {
     background-color: #555;
-  }
-   */
+    font-size: 105%;
+    text-shadow: 2px 2px 4px #fff;
+}
   /* Style the main content area */
   /* h1 {
     font-size: 36px;

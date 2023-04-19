@@ -53,3 +53,10 @@ body.dark-mode {
 .footing.dark-mode{
     background-color: #6d6d6d;
 }
+.text-white > li > a:hover,
+.text-white > li > a:focus {
+    background-color: #555;
+    font-size: 105%;
+    font-weight: bold;
+    text-shadow: none;
+}
