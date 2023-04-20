@@ -44,4 +44,13 @@ function checkDarkModeEnabled() {
         toggleDarkMode();
     }
 }
+function oldalTeteje(){
+  let gombom = document.getElementById("gomb")
+
+
+  function oldalTeteje() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+}
 checkDarkModeEnabled()

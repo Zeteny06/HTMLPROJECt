@@ -53,26 +53,24 @@ body {
   }
    */
   /* Style the footer */
-  footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    margin-top: 50px;
-  }
-footer {
+.footing {
   background-color: #333;
   color: #fff;
   padding: 10px;
-  position: fixed;
-  bottom: 0;
+  position: absolute;
   left: 10%;
   right: 10%;
-  height: 10%;
+  height: 10vh;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
+  text-align: center;
+  padding: 20px;
+  /* margin-top: 50px */
 }
   
 /* .nav-item{
   color:rgb(155, 155, 50);
  } */
+ .wrapper{
+  min-height: 90vh;
+ }
