@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style.css">
     <title>DALL-E</title>
 </head>
 <body>
@@ -26,7 +26,16 @@
           <div class="offcanvas-body" id="canvasbody">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                <a class="nav-link active" id="lista" aria-current="page" href="#">Home</a>
+                <a class="nav-link" id="lista" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="lista2" href="gpt4.html">GPT-4</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="lista2" href="gpt3.5.html">GPT-3.5</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" id="lista2" href="dall-e.html">DALL-E</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" id="lista2" href="#">Link</a>
@@ -37,92 +46,71 @@
           </div>
         </div>
     </nav>
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">My Bootstrap Page</a>
-            <button class="navbar-toggler text-bg-light" type="button" data-bs-toggle="collapse"data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse " id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link active1" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
-                </li>
-              </ul>
+      <div class="row">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="képek/gpt.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="képek/gpt2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="képek/gpt3.png" class="d-block w-100" alt="...">
             </div>
           </div>
-        </nav>
-        <div class="row">
-          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="képek/gpt.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-            <div class="bg-dark container-md bg-opacity-10">
-              <div class="row">
-                <div class="col-1"></div>
-                <div class="col-10">
-                  <br>
-                  <h2>A DALL·E 2 eredeti, valósághű képeket és művészetet tud létrehozni szövegesleírásból. Fogalmakat, attribútumokat és stílusokat kombinálhat.</h2>
-                  <p>
-                      A DALL-E-2 egy mesterséges intelligencia képgenerátor, amely jól jöhet azokbanaz iparágakban, ahol gyakori a próbálkozás és a hiba. A DALL-E-2 egy mesterségesintelligencia képgenerátor, amely szöveges promptok segítségével képes képeketlétrehozni. A DALL-E-2 segít leegyszerűsíteni az új elemek létrehozásánakfolyamatát azáltal, hogy szöveges leírások használatával megtudhatja, hogyan fogkinézni egy ruha, szín vagy más elem, mielőtt elkészítené.
-                  </p>
-                  <p>
-                      A DALL-E először 2021 elején jelent meg, de csak szeptember 28-án tettékelérhetővé a DALL-E 2 frissített verzióját, várólista nélkül. Az eredeti DALL-Eképeket tudott generálni szöveges leírásokból, de a DALL-E 2 valósághűbb éspontosabb képeket tud generálni négyszer jobb felbontással. Az OpenAI aztállítja, hogy a DALL-E 2 elég intelligens ahhoz, hogy objektumokat, fogalmakatés stílusokat kombináljon; másodperceken belül 10 különböző képet tud generálni.
-                  </p>
-                  <p>
-                      A készítők remélik, hogy a DALL·E 2 képessé teszi az embereket a kreatívkifejezésre. A DALL·E 2 abban is segít megérteni, hogy a fejlett mesterségesintelligencia rendszerek hogyan látják és értik a világunkat, ami kritikusfontosságú küldetésük, az emberiség javát szolgáló AI létrehozása szempontjából.
-                  </p>
-                  <h3>
-                      A Dall-E-2 képességei:
-                  </h3>
-                  
-                  <p>
-                    Számos objektum rajzolása <br>
-                    Új nehézséget jelent több objektum, jellemzőik és térbeli kapcsolataikegyszerre történő irányítása.
-
-                    A jellemzők kezelése
-                  </p>
-                  <p>
-                    A DALLE képessége az objektum számos tulajdonságának megváltoztatására,valamint a megjelenés gyakoriságára.                A háromdimenziós és perspektívák megjelenítése
-                  </p>
-                  <p>
-                   A DALLE egy másik funkciója a jelenet perspektívájának és 3D-smegjelenítési stílusának szabályozása.</p>
-                  <p>
-                      A szerkezet megjelenítése belül és kívül egyaránt <br>
-                      A DALLE képessége belső és külső szerkezetek ábrázolásárakeresztmetszeti nézetekkel és
-                      közeli fotókkal
-                  </p>
-                  </div>
-                </div>
-            </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        
-        <footer>
-          <p>&copy; 2023 My Bootstrap Page</p>
-        </footer>
+        </div>
+        <div class="bg-dark container-md bg-opacity-10">
+            <div class="row">
+              <div class="col-1"></div>
+              <div class="col-10">
+                <br>
+                <h2>A DALL·E 2 eredeti, valósághű képeket és művészetet tud létrehozni szövegesleírásból. Fogalmakat, attribútumokat és stílusokat kombinálhat.</h2>
+                <p>
+                    A DALL-E-2 egy mesterséges intelligencia képgenerátor, amely jól jöhet azokbanaz iparágakban, ahol gyakori a próbálkozás és a hiba. A DALL-E-2 egy mesterségesintelligencia képgenerátor, amely szöveges promptok segítségével képes képeketlétrehozni. A DALL-E-2 segít leegyszerűsíteni az új elemek létrehozásánakfolyamatát azáltal, hogy szöveges leírások használatával megtudhatja, hogyan fogkinézni egy ruha, szín vagy más elem, mielőtt elkészítené.
+                </p>
+                <p>
+                    A DALL-E először 2021 elején jelent meg, de csak szeptember 28-án tettékelérhetővé a DALL-E 2 frissített verzióját, várólista nélkül. Az eredeti DALL-Eképeket tudott generálni szöveges leírásokból, de a DALL-E 2 valósághűbb éspontosabb képeket tud generálni négyszer jobb felbontással. Az OpenAI aztállítja, hogy a DALL-E 2 elég intelligens ahhoz, hogy objektumokat, fogalmakatés stílusokat kombináljon; másodperceken belül 10 különböző képet tud generálni.
+                </p>
+                <p>
+                    A készítők remélik, hogy a DALL·E 2 képessé teszi az embereket a kreatívkifejezésre. A DALL·E 2 abban is segít megérteni, hogy a fejlett mesterségesintelligencia rendszerek hogyan látják és értik a világunkat, ami kritikusfontosságú küldetésük, az emberiség javát szolgáló AI létrehozása szempontjából.
+                </p>
+                <h3>
+                    A Dall-E-2 képességei:
+                </h3>
+                
+                <p>
+                  Számos objektum rajzolása <br>
+                  Új nehézséget jelent több objektum, jellemzőik és térbeli kapcsolataikegyszerre történő irányítása.
+                  A jellemzők kezelése
+                </p>
+                <p>
+                  A DALLE képessége az objektum számos tulajdonságának megváltoztatására,valamint a megjelenés gyakoriságára.                A háromdimenziós és perspektívák megjelenítése
+                </p>
+                <p>
+                 A DALLE egy másik funkciója a jelenet perspektívájának és 3D-smegjelenítési stílusának szabályozása.</p>
+                <p>
+                    A szerkezet megjelenítése belül és kívül egyaránt <br>
+                    A DALLE képessége belső és külső szerkezetek ábrázolásárakeresztmetszeti nézetekkel és
+                    közeli fotókkal
+                </p>
+                </div>
+              </div>
+          </div>
+      </div>
+      
+      <footer>
+        <p>&copy; 2023 My Bootstrap Page</p>
+      </footer>
     </div>  
     <script src="script.js"></script>
     <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>      
