@@ -11,47 +11,49 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <nav class="navbar fixed-top mx-5">
-        <!-- <a class="navbar-brand" href="#">Offcanvas navbar</a> -->
-        <button class="navbar-toggler" type="button" id="navbutton" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header">
-            <a class="navbar-brand" href="#" id="logo">
-              <img src="képek/black.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top bg" id="imgClickAndChange">
-              Open AI
-            </a>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body" id="canvasbody">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link active" id="lista" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" id="lista2" href="#">Link</a>
-              </li>
-              <div class="slider-container position-absolute bottom-0 " id="sliderContainer" onclick="toggleDarkMode()">
-                <div class="slider-button" id="sliderButton"></div>
+    <div class="wrapper">
+      <nav class="navbar fixed-top mx-5">
+          <!-- <a class="navbar-brand" href="#">Offcanvas navbar</a> -->
+          <button class="navbar-toggler" type="button" id="navbutton" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <a class="navbar-brand" href="#" id="logo">
+                <img src="képek/black.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top bg" id="imgClickAndChange">
+                Open AI
+              </a>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body" id="canvasbody">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" id="lista" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="lista2" href="#">Link</a>
+                </li>
+                <div class="slider-container position-absolute bottom-0 " id="sliderContainer" onclick="toggleDarkMode()">
+                  <div class="slider-button" id="sliderButton"></div>
+              </div>
             </div>
           </div>
-        </div>
-    </nav>
-    <div class="container form-container" id="formContainer">
-      <h1 class="headning" id="heading">Login</h1>
-      <form>
-        <label for="username">Felhasználónév:</label>
-        <input type="text" id="username" name="username"><br><br>
-        <label for="password">Jelszó:</label>
-        <input type="password" id="password" name="password"><br><br>
-        <input type="button" value="Login" onclick="checkLogin()">
-      </form>
+      </nav>
+      <div class="container form-container" id="formContainer">
+        <h1 class="headning" id="heading">Login</h1>
+        <form>
+          <label for="username">Felhasználónév:</label>
+          <input type="text" id="username" name="username"><br><br>
+          <label for="password">Jelszó:</label>
+          <input type="password" id="password" name="password"><br><br>
+          <input type="button" value="Login" onclick="checkLogin()">
+        </form>
+      </div>
     </div>
-    <footer class="footing" id="footer">
+    <div class="container">
+      <footer class="footing" id="footer">
+      </footer>
     </div>
-    </footer>
-  </div>
     <script>
       function checkLogin() {
         var username = document.getElementById("username").value;
