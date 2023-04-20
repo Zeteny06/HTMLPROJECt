@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>DALL-E</title>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+<body>
+    <div class="container">
+      <nav class="navbar fixed-top mx-5">
+        <!-- <a class="navbar-brand" href="#">Offcanvas navbar</a> -->
+        <button class="navbar-toggler" type="button" id="navbutton" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <a class="navbar-brand" href="#" id="logo">
+              <img src="képek/black.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top" id="imgClickAndChange">
+              Open AI
+            </a>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body" id="canvasbody">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" id="lista" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="lista2" href="gpt4.html">GPT-4</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="lista2" href="gpt3.5.html">GPT-3.5</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="lista2" href="dall-e.html">DALL-E</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="lista2" href="whisper.html">Whisper</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" id="lista2" href="#">Kapcsolat</a>
+              </li>
+              <div class="slider-container position-absolute bottom-0 " id="sliderContainer" onclick="toggleDarkMode()">
+                <div class="slider-button" id="sliderButton"></div>
+            </div>
+          </div>
+        </div>
+    </nav>
+      <div class="row">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="képek/gpt.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="képek/gpt2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="képek/gpt3.png" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        </div>
+        <div class="bg-dark container-md bg-opacity-10">
+            <div class="row">
+              <div class="col-1"></div>
+              <div class="col-10">
+                <br>
+                <h1>Kapcsolat</h1>
+                <div class="input-group">
+                    <span class="input-group-text">Vezeték- és Keresztnév</span>
+                    <input type="text" aria-label="First name" class="form-control">
+                    <input type="text" aria-label="Last name" class="form-control">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Email cím</span>
+                    <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <span class="input-group-text" id="basic-addon2">@gmail.com</span>
+                </div>
+                <div class="input-group mb-3">
+                  <label class="input-group-text" for="inputGroupSelect01">Felkeresés oka</label>
+                  <select class="form-select" id="inputGroupSelect01">
+                    <option selected>Válasszon</option>
+                    <option value="1">Hiba jelentés</option>
+                    <option value="2">Reklám és Szponzoráció</option>
+                    <option value="3">Eseménnyel kapcsolatos kérdés</option>
+                  </select>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-text">Üzenet</span>
+                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                  </div>
+                  <div class="input-wrap"><div><div style="width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LeZyjwUAAAAABqkWH_Ct0efGn0B4pGU6ZLUeUvA&amp;co=aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbTo0NDM.&amp;hl=hu&amp;type=image&amp;v=6MY32oPwFCn9SUKWt8czDsDw&amp;theme=light&amp;size=normal&amp;badge=bottomright&amp;cb=cbbvamh3cd6" width="304" height="78" role="presentation" name="a-xz0wqrvtsnj7" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div><label></label></div>
+                </div>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button class="btn btn-primary me-md-2 btn-secondary" href="#" type="button">Beküldés</button>
+                  </div>
+            </div> 
+        </div>
+    
+        <footer class="sticky-bottom">
+            <p>&copy; 2023 My Bootstrap Page</p>
+          </footer>
+        </div>  
+        <script src="script.js"></script>
+        <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>      
+    </body>
+    </html>
