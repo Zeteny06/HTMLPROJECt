@@ -18,7 +18,10 @@ body.dark-mode {
     cursor: pointer;
     transition: background-color 0.5s;
 }
-
+.modalHeader, .modalBody, .modalFooter {
+    background-color: #333 !important;
+    color: #fff;
+}
 /* Slider button */
 .slider-button {
     width: 40px;
@@ -41,10 +44,10 @@ body.dark-mode {
     background-color: #000;
     transform: translateX(50px);
 }
-.headning{
+.heading{
     color: #000;
 }
-.headning.dark-mode{
+.heading.dark-mode{
     color: #fff;
 }
 .footing{

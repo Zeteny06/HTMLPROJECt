@@ -11,36 +11,64 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog" id="modal">
+    <div class="modal-content">
+      <div class="modal-header" id="modalHeader">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Nem vagy bejelentkezve!</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" id="modalBody">
+        Amíg nem jelentkezel be,addig nem tudod használni a navigációs menüt.
+      </div>
+      <div class="modal-footer" id="modalFooter">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Megértettem</button>
+      </div>
+    </div>
+  </div>
+</div>
     <nav class="navbar fixed-top mx-5">
-      <!-- <a class="navbar-brand" href="#">Offcanvas navbar</a> -->
           <button class="navbar-toggler" type="button" id="navbutton" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
               <a class="navbar-brand" href="#" id="logo">
-                <img src="képek/black.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top bg" id="imgClickAndChange">
+                <img src="képek/black.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top bg imgClickAndChange" id="imgClickAndChange">
                 Open AI
               </a>
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body" id="canvasbody">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" id="warning"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                 <li class="nav-item">
                   <a class="nav-link active" id="lista" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="lista2" href="#">Link</a>
+                  <a class="nav-link" id="lista2" href="#">GPT-4</a>
                 </li>
-                <div class="slider-container position-absolute bottom-0 " id="sliderContainer" onclick="toggleDarkMode()">
-                  <div class="slider-button" id="sliderButton"></div>
-                </div>
+                <li class="nav-item">
+                  <a class="nav-link" id="lista3" href="#">GPT-3.5</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link"  id="lista4" href="#">DALL-E</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="lista5" href="#">Whisper</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="lista6" href="#">Kapcsolat</a>
+                </li>
+              </ul>
+              <div class="slider-container position-absolute bottom-0 " onclick="toggleDarkMode()">
+                <div class="slider-button" ></div>
+              </div>
               </div>
             </div>
       </nav>
     <div class="wrapper">
       <div class="container form-container" id="formContainer">
-        <h1 class="headning" id="heading">Login</h1>
+        <h1 class="heading" id="heading">Login</h1>
         <form>
           <label for="username">Felhasználónév:</label>
           <input type="text" id="username" name="username"><br><br>
@@ -63,7 +91,13 @@
         } else {
           alert("Felhasználónév vagy jelszó érvénytelen.");
         }
-      }
+      };
+      const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', () => {
+  myInput.focus()
+})
     </script>
     <script src="script.js"></script>
     <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>

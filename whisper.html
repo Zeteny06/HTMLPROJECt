@@ -5,36 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="darkmod.css">
 </head>
 
 <body>
     <div class="container">
         <nav class="navbar fixed-top mx-5">
-            <!-- <a class="navbar-brand" href="#">Offcanvas navbar</a> -->
             <button class="navbar-toggler" type="button" id="navbutton" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
               <div class="offcanvas-header">
                 <a class="navbar-brand" href="#" id="logo">
-                  <img src="képek/black.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top" id="imgClickAndChange">
+                  <img src="képek/black.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top bg" id="imgClickAndChange">
                   Open AI
                 </a>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
               <div class="offcanvas-body" id="canvasbody">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" id="warning"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                   <li class="nav-item">
-                    <a class="nav-link active" id="lista" aria-current="page" href="#">Home</a>
+                    <a class="nav-link " id="lista" aria-current="page" href="index.html">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" id="lista2" href="#">Link</a>
+                    <a class="nav-link" id="lista2" href="gpt4.html">GPT-4</a>
                   </li>
-                  <div class="slider-container position-absolute bottom-0 " id="sliderContainer" onclick="toggleDarkMode()">
-                    <div class="slider-button" id="sliderButton"></div>
+                  <li class="nav-item">
+                    <a class="nav-link" id="lista3" href="gpt3.5.html">GPT-3.5</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"  id="lista4" href="gpt3.5.html">DALL-E</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" id="lista5" href="#">Whisper</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="lista6" href="kapcsolat.html">Kapcsolat</a>
+                  </li>
+                </ul>
+                <div class="slider-container position-absolute bottom-0 " id="sliderContainer" onclick="toggleDarkMode()">
+                  <div class="slider-button" id="sliderButton"></div>
+                </div>
                 </div>
               </div>
-            </div>
         </nav>
     </div>
     <h1>Whisper API</h1>
