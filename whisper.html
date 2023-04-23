@@ -7,90 +7,122 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="darkmod.css">
+    <title>Kapcsolat</title>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
     <div class="container">
-        <nav class="navbar fixed-top mx-5">
-            <button class="navbar-toggler" type="button" id="navbutton" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-              <div class="offcanvas-header">
-                <a class="navbar-brand" href="#" id="logo">
-                  <img src="képek/black.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top bg" id="imgClickAndChange">
-                  Open AI
-                </a>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-              <div class="offcanvas-body" id="canvasbody">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" id="warning"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                  <li class="nav-item">
-                    <a class="nav-link " id="lista" aria-current="page" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" id="lista2" href="gpt4.html">GPT-4</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" id="lista3" href="gpt3.5.html">GPT-3.5</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link"  id="lista4" href="gpt3.5.html">DALL-E</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" id="lista5" href="#">Whisper</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" id="lista6" href="kapcsolat.html">Kapcsolat</a>
-                  </li>
-                </ul>
-                <div class="slider-container position-absolute bottom-0 " id="sliderContainer" onclick="toggleDarkMode()">
-                  <div class="slider-button" id="sliderButton"></div>
-                </div>
-                </div>
-              </div>
-        </nav>
-    </div>
-    <h1>Whisper API</h1>
-    <p>
-        A ChatGPT mögött álló cég által létrehozott Whisper az OpenAI általános célú beszédfelismerő modellje. Elsősorban a beszélt nyelv írott szöveggé alakítására szolgál.
-    </p>
-    <h2>Árazás</h2>
-    <p>
-        10 percenként 6 centtel az API megfizethető módot kínál hangfájlok átírására vagy szöveggé fordítására.
-    </p>
-    <h2>Használhatóság</h2>
-    <p>
-        A fenti példák a meglévő szórakoztató/médiafájlokra összpontosítanak, de ennek az automatikus beszédfelismerő (ASR) rendszernek számos lehetséges felhasználási esete van az alkalmazások széles körében. Néhány elsődleges használati eset a következőket tartalmazza:
-    </p>
-    <li>
-        Kisegítő lehetőségek: A Whisper használható alkalmazások fejlesztésére hallássérült vagy más fogyatékossággal élő személyek számára, például valós idejű feliratok biztosítására élő eseményekhez vagy beszéd szöveggé átírására olvasáshoz.
-    </li>
-    <li>
-        Hangasszisztensek: A Whisper beépíthető hangasszisztensekbe, például az okostelefonokba és az intelligens otthoni eszközökbe, hogy javítsák pontosságukat és válaszkészségüket a felhasználók hangutasításainak felismerése és feldolgozása során.
-    </li>
-    <li>
-        A globális kommunikáció megkönnyítése: A több nyelven történő pontos beszédfelismerés révén a Whisper szerepet játszhat a nyelvi akadályok lebontásában és a jobb kommunikáció elősegítésében a különböző nyelvi hátterű emberek között.
-    </li>
-    <li>
-        Telemedicina: A Whisper megkönnyítheti a távoli orvosi konzultációkat azáltal, hogy átírja a betegek tüneti leírását és egyéb releváns információkat az egészségügyi szakemberek számára.
-    </li>
-    <li>
-        Találkozó- és konferenciamegoldások: A Whisper beépíthető az értekezlet- és konferenciaeszközökbe, hogy élő átiratokat biztosítson, ami hasznos lehet azoknak a résztvevőknek, akik nehezen értik a beszélt nyelvet, zajos környezetben tartózkodnak, vagy később szeretnék áttekinteni a tartalmat.
-    </li>
-    <li>
-        Call center automatizálás: A Whisper call center-rendszerekbe történő integrálásával a vállalkozások automatizálhatják a különféle feladatokat, mint például az ügyfelek interakcióinak átírása, valós idejű támogatás az ügynökök számára, vagy az ügyfelek véleményének és visszajelzéseinek elemzése.
-    </li>
-    <li>
-        Podcast- és rádióelemzés: A Whisper használható podcastok vagy rádióműsorok beszédtartalmának elemzésére adatbányászati ​​vagy trendelemzési célokra.
-    </li>
-    <li>
-        Virtuális valóság (VR) és kiterjesztett valóság (AR) alkalmazások: A Whisper beépíthető a VR- és AR-élményekbe, lehetővé téve a felhasználók számára, hogy hangutasításokkal kommunikáljanak virtuális környezetekkel.
-    </li>
-    <h2>API</h2>
-    <p>
-        Ha az OpenAI Whisper API konkrét használati esetére gondol, használhatja az OpenAI Python könyvtárat a megvalósításához.
-    </p>
-</body>
-<script src="script.js"></script>
-<script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
-</html>
+      <nav class="navbar fixed-top mx-5">
+        <button class="navbar-toggler" type="button" id="navbutton" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <a class="navbar-brand" href="#" id="logo">
+              <img src="képek/black.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top" id="imgClickAndChange">
+              Open AI
+            </a>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body" id="canvasbody">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" id="lista" aria-current="page" href="index.html">Főoldal</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="lista2" href="gpt4.html">GPT-4</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="lista2" href="gpt3.5.html">GPT-3.5</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="lista2" href="dall-e.html">DALL-E</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" id="lista2" href="whisper.html">Whisper</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="lista2" href="kapcsolat.html">Kapcsolat</a>
+              </li>
+              <div class="slider-container position-absolute bottom-0 " id="sliderContainer" onclick="toggleDarkMode()">
+                <div class="slider-button" id="sliderButton"></div>
+            </div>
+          </div>
+        </div>
+    </nav>
+      <div class="row">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="képek/gpt.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="képek/gpt2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="képek/gpt3.png" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        </div>
+        <div class="bg-dark container-md bg-opacity-10 fs-5">
+            <div class="row">
+              <div class="col-1"></div>
+              <div class="col-10">
+                <h1>Whisper API</h1>
+                <p>
+                    A ChatGPT mögött álló cég által létrehozott Whisper az OpenAI általános célú beszédfelismerő modellje. Elsősorban a beszélt nyelv írott szöveggé alakítására szolgál.
+                </p>
+                <h2>Árazás</h2>
+                <p>
+                    10 percenként 6 centtel az API megfizethető módot kínál hangfájlok átírására vagy szöveggé fordítására.
+                </p>
+                <h2>Használhatóság</h2>
+                <p>
+                    A fenti példák a meglévő szórakoztató/médiafájlokra összpontosítanak, de ennek az automatikus beszédfelismerő (ASR) rendszernek számos lehetséges felhasználási esete van az alkalmazások széles körében. Néhány elsődleges használati eset a következőket tartalmazza:
+                </p>
+                <li>
+                    Kisegítő lehetőségek: A Whisper használható alkalmazások fejlesztésére hallássérült vagy más fogyatékossággal élő személyek számára, például valós idejű feliratok biztosítására élő eseményekhez vagy beszéd szöveggé átírására olvasáshoz.
+                </li>
+                <li>
+                    Hangasszisztensek: A Whisper beépíthető hangasszisztensekbe, például az okostelefonokba és az intelligens otthoni eszközökbe, hogy javítsák pontosságukat és válaszkészségüket a felhasználók hangutasításainak felismerése és feldolgozása során.
+                </li>
+                <li>
+                    A globális kommunikáció megkönnyítése: A több nyelven történő pontos beszédfelismerés révén a Whisper szerepet játszhat a nyelvi akadályok lebontásában és a jobb kommunikáció elősegítésében a különböző nyelvi hátterű emberek között.
+                </li>
+                <li>
+                    Telemedicina: A Whisper megkönnyítheti a távoli orvosi konzultációkat azáltal, hogy átírja a betegek tüneti leírását és egyéb releváns információkat az egészségügyi szakemberek számára.
+                </li>
+                <li>
+                    Találkozó- és konferenciamegoldások: A Whisper beépíthető az értekezlet- és konferenciaeszközökbe, hogy élő átiratokat biztosítson, ami hasznos lehet azoknak a résztvevőknek, akik nehezen értik a beszélt nyelvet, zajos környezetben tartózkodnak, vagy később szeretnék áttekinteni a tartalmat.
+                </li>
+                <li>
+                    Call center automatizálás: A Whisper call center-rendszerekbe történő integrálásával a vállalkozások automatizálhatják a különféle feladatokat, mint például az ügyfelek interakcióinak átírása, valós idejű támogatás az ügynökök számára, vagy az ügyfelek véleményének és visszajelzéseinek elemzése.
+                </li>
+                <li>
+                    Podcast- és rádióelemzés: A Whisper használható podcastok vagy rádióműsorok beszédtartalmának elemzésére adatbányászati ​​vagy trendelemzési célokra.
+                </li>
+                <li>
+                    Virtuális valóság (VR) és kiterjesztett valóság (AR) alkalmazások: A Whisper beépíthető a VR- és AR-élményekbe, lehetővé téve a felhasználók számára, hogy hangutasításokkal kommunikáljanak virtuális környezetekkel.
+                </li>
+                <h2>API</h2>
+                <p>
+                    Ha az OpenAI Whisper API konkrét használati esetére gondol, használhatja az OpenAI Python könyvtárat a megvalósításához.
+                </p>
+        <div class="container">
+            <footer class="footing" id="footer">
+              <p>&copy; 2023 My Bootstrap Page</p>
+            </footer>
+          </div>
+        <script src="script.js"></script>
+        <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>      
+    </body>
+    </html>
