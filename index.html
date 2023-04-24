@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Bootstrap Page</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Homepage</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="darkmod.css">
+    <link rel="stylesheet" href="style.css">
     <!-- <link rel="stylesheet" href="style.css"> -->
   </head>
   <body>
@@ -20,26 +21,39 @@
           <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
               <a class="navbar-brand" href="#" id="logo">
-                <img src="képek/black.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top" id="imgClickAndChange">
+                <img src="képek/black.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top bg imgClickAndChange" id="imgClickAndChange">
                 Open AI
               </a>
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body" id="canvasbody">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" id="warning"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                 <li class="nav-item">
                   <a class="nav-link active" id="lista" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="lista2" href="#">Link</a>
+                  <a class="nav-link" id="lista2" href="#">GPT-4</a>
                 </li>
-                <div class="slider-container position-absolute bottom-0 " id="sliderContainer" onclick="toggleDarkMode()">
-                  <div class="slider-button" id="sliderButton"></div>
+                <li class="nav-item">
+                  <a class="nav-link" id="lista3" href="#">GPT-3.5</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link"  id="lista4" href="#">DALL-E</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="lista5" href="#">Whisper</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="lista6" href="#">Kapcsolat</a>
+                </li>
+              </ul>
+              <div class="slider-container position-absolute bottom-0" onclick="toggleDarkMode()">
+                <div class="slider-button" ></div>
+              </div>
               </div>
             </div>
-          </div>
       </nav>
-          <div id="carouselExampleCaptions" class="carousel slide">
+          <div id="carouselExampleCaptions" class="carousel slide my-5">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -47,25 +61,92 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="képek/" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>First slide label</h5>
-                  <p>Some representative placeholder content for the first slide.</p>
+                <div class="row row-cols-3">
+                  <div class="col">
+                    <div class="card" style="width: 18rem;">
+                      <img src="..." class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card" style="width: 18rem;">
+                      <img src="..." class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card" style="width: 18rem;">
+                      <img src="..." class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Second slide label</h5>
-                  <p>Some representative placeholder content for the second slide.</p>
+                <div class="row row-cols-3">
+                  <div class="col">
+                    <div class="card" style="width: 18rem;">
+                      <img src="..." class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card" style="width: 18rem;">
+                      <img src="..." class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card" style="width: 18rem;">
+                      <img src="..." class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
+                <div class="row row-cols-3">
+                  <div class="col">
+                    <div class="card" style="width: 18rem;">
+                      <img src="..." class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card" style="width: 18rem;">
+                      <img src="..." class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card" style="width: 18rem;">
+                      <img src="..." class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+                </div>
+              </div>
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
@@ -78,11 +159,11 @@
             </button>
           </div>
     </div>
+  </div>
         <div class="container">
           <footer class="footing" id="footer">  
           </footer>
         </div>
-    </div>
     <script src="script.js"></script>
     <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
   </body>

@@ -84,10 +84,15 @@ function toggleDarkMode() {
   var modalHeaders = document.querySelectorAll(".modal-header");
   var modalBodies = document.querySelectorAll(".modal-body");
   var modalFooters = document.querySelectorAll(".modal-footer");
+  var NAVBUT = document.querySelectorAll(".navbar-toggler");
 
   body.classList.toggle("dark-mode");
 
   sliderContainers.forEach(function(container) {
+    container.classList.toggle("dark-mode");
+  });
+
+  NAVBUT.forEach(function(container) {
     container.classList.toggle("dark-mode");
   });
 

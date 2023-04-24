@@ -33,6 +33,9 @@ body.dark-mode {
     left: 5px;
     transition: transform 0.5s;
 }
+.navbar-toggler{
+    background-color: #ccc;
+}
 
 /* Dark mode styles for slider */
 .slider-container.dark-mode {
