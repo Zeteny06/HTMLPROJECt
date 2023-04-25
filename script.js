@@ -1,74 +1,3 @@
-// function toggleDarkMode() {
-//     var body = document.body;
-//     var sliderContainer = document.getElementById("sliderContainer");
-//     var sliderButton = document.getElementById("sliderButton");
-//     var formContainer = document.getElementById("formContainer");
-//     var headning = document.getElementById("heading");
-//     var footing = document.getElementById("footer");
-//     var image = document.getElementById("imgClickAndChange");
-//     var canvas = document.getElementById("offcanvasNavbar");
-//     var list = document.getElementById("lista");
-//     var list2 = document.getElementById("lista2");
-//     var list3 = document.getElementById("lista3");
-//     var list4 = document.getElementById("lista4");
-//     var list5 = document.getElementById("lista5");
-//     var list6 = document.getElementById("lista6");
-//     var logo = document.getElementById("logo");
-//     var navbut = document.getElementById("navbutton");
-//     var modalhead = document.getElementById("modalHeader");
-//     var modalbody = document.getElementById("modalBody");
-//     var modalFooter = document.getElementById("modalFooter");
-    
-//     body.classList.toggle("dark-mode");
-//     sliderContainer.classList.toggle("dark-mode");
-//     sliderButton.classList.toggle("dark-mode");
-//     formContainer.classList.toggle("dark-mode");
-//     headning.classList.toggle("dark-mode");
-//     footing.classList.toggle("dark-mode");
-//     canvas.classList.toggle("text-bg-dark")
-//     list.classList.toggle("text-white")
-//     list2.classList.toggle("text-white")
-//     list3.classList.toggle("text-white")
-//     list4.classList.toggle("text-white")
-//     list5.classList.toggle("text-white")
-//     list6.classList.toggle("text-white")
-//     logo.classList.toggle("text-white")
-//     navbut.classList.toggle("bg-white")
-//     modalhead.classList.toggle("modalHeader")
-//     modalbody.classList.toggle("modalBody")
-//     modalFooter.classList.toggle("modalFooter")
-    
-//     if (body.classList.contains("dark-mode")) {
-//       image.src = "képek\\white.png";
-//       image.alt = "Dark mode image";
-//       localStorage.setItem("darkModeEnabled", "true");
-//     } else {
-//       image.src = "képek\\black.png";
-//       image.alt = "Light mode image";
-//       localStorage.removeItem("darkModeEnabled");
-//     }
-// }
-// document.addEventListener("DOMContentLoaded", function() {
-// var darkModeToggle = document.getElementById("darkModeToggle");
-// darkModeToggle.addEventListener("click", toggleDarkMode);
-// })
-// function checkDarkModeEnabled() {
-//     var darkModeEnabled = localStorage.getItem("darkModeEnabled");
-//     if (darkModeEnabled === "true") {
-//         toggleDarkMode();
-//     }
-// }
-// function oldalTeteje(){
-//   let gombom = document.getElementById("gomb")
-
-
-//   function oldalTeteje() {
-//   document.body.scrollTop = 0;
-//   document.documentElement.scrollTop = 0;
-// }
-
-// }
-// checkDarkModeEnabled()
 function toggleDarkMode() {
   var body = document.body;
   var sliderContainers = document.querySelectorAll(".slider-container");
@@ -174,5 +103,33 @@ function oldalTeteje() {
     document.documentElement.scrollTop = 0;
   }
 }
+var swiper = new Swiper(".slide-content", {
+  slidesPerView: 3,
+  spaceBetween: 25,
+  loop: true,
+  centerSlide: 'true',
+  fade: 'true',
+  grabCursor: 'true',
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 
+  breakpoints:{
+      0: {
+          slidesPerView: 1,
+      },
+      520: {
+          slidesPerView: 2,
+      },
+      950: {
+          slidesPerView: 3,
+      },
+  },
+});
 checkDarkModeEnabled();
