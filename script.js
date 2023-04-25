@@ -16,7 +16,7 @@ function toggleDarkMode() {
   var NAVBUT = document.querySelectorAll(".navbar-toggler");
 
   body.classList.toggle("dark-mode");
-
+  
   sliderContainers.forEach(function(container) {
     container.classList.toggle("dark-mode");
   });
@@ -104,7 +104,8 @@ function oldalTeteje() {
   }
 }
 var swiper = new Swiper(".slide-content", {
-  slidesPerView: 3,
+  slidesPerView: 5,
+  slidesPerGroup: 1,
   spaceBetween: 25,
   loop: true,
   centerSlide: 'true',
