@@ -87,7 +87,7 @@
                     <div class="card-content">
                         <h2 class="name">GPT-3.5 Turbo</h2>
                         <p class="description">A GPT-3 utódja: gyorsabb,okosabb,olcsóbb. Minden szempontból jobb.</p>
-                        <button class="button mt-0"><a href="gpt3.5.html">További információ</a></button>
+                        <button class="button "><a href="gpt3.5.html">További információ</a></button>
                     </div>
                 </div>
                   <div class="card swiper-slide">
@@ -135,7 +135,7 @@
           <div class="swiper-button-prev swiper-navBtn"></div>
             </div>
       </div>
-      <div class="container py-5">
+      <div class="container py-2">
         <h1 class="heading">ChatGPT</h1>
         <div class="paragraph">
           <p class="heading">A ChatGPT modell az InstructGPT testvéremodellje, amelyet arra képeztek ki, hogy egy utasítást kövessen a felkérésben és részletes választ adjon.</p>
@@ -175,6 +175,36 @@
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
           AOS.init();
+          var swiper = new Swiper(".slide-content", {
+  slidesPerView: 5,
+  slidesPerGroup: 1,
+  spaceBetween: 25,
+  loop: true,
+  centerSlide: 'true',
+  fade: 'true',
+  grabCursor: 'true',
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  breakpoints:{
+      0: {
+          slidesPerView: 1,
+      },
+      520: {
+          slidesPerView: 2,
+      },
+      950: {
+          slidesPerView: 3,
+      },
+  },
+});
         </script>
   </body>
 </html>
