@@ -76,3 +76,9 @@ body.dark-mode {
 .card-content-dark{
     background: rgba(red, green, blue, alpha);
 }
+.paragraph-background{
+    background-color: #555;
+}
+.paragraph-background a{
+    color: #fff;
+}

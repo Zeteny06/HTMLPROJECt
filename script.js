@@ -16,8 +16,16 @@ function toggleDarkMode() {
   var NAVBUT = document.querySelectorAll(".navbar-toggler");
   var overlay = document.querySelectorAll(".overlay");
   var cardcontent = document.querySelectorAll(".card-content");
+  var paragraph = document.querySelectorAll(".paragraph");
   
   body.classList.toggle("dark-mode");
+  
+  paragraph.forEach(function(container) {
+    container.classList.toggle("paragraph-background");
+  });
+  paragraph.forEach(function(container) {
+    container.classList.toggle("paragraph-a");
+  });
   
   cardcontent.forEach(function(container) {
     container.classList.toggle("card-content-dark");

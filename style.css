@@ -141,7 +141,7 @@ d-c
 .card{
   border-radius: 25px;
   background-color: #FFF;
-  height: 25rem;
+  min-height: 25vh;
 }
 .image-content,
 .card-content{
@@ -265,4 +265,19 @@ d-c
 
 .containerBottom{
   bottom: 0;
+}
+.paragraph{
+  border: solid;
+  border-color: #555;
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 105%;
+  text-align: left;
+}
+.paragraph a{
+  color: black;
+}
+.paragraph a:hover{
+  color: #333;
+  font-weight: bold;
 }
