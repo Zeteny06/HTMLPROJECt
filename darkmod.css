@@ -66,3 +66,13 @@ body.dark-mode {
     font-weight: bold;
     text-shadow: none;
 }
+.overlay-dark{
+    background: rgb(0, 187, 255);
+    background: linear-gradient(127deg, rgba(2,0,36,1) 0%, rgba(34,34,51,1) 41%, rgba(0,185,255,1) 100%);
+}
+.overlay-dark::before{
+    background:  rgba(0,185,255,1);
+}
+.card-content-dark{
+    background: rgba(red, green, blue, alpha);
+}

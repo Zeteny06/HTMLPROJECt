@@ -14,9 +14,19 @@ function toggleDarkMode() {
   var modalBodies = document.querySelectorAll(".modal-body");
   var modalFooters = document.querySelectorAll(".modal-footer");
   var NAVBUT = document.querySelectorAll(".navbar-toggler");
-
+  var overlay = document.querySelectorAll(".overlay");
+  var cardcontent = document.querySelectorAll(".card-content");
+  
   body.classList.toggle("dark-mode");
   
+  cardcontent.forEach(function(container) {
+    container.classList.toggle("card-content-dark");
+  });
+
+  overlay.forEach(function(container) {
+    container.classList.toggle("overlay-dark");
+  });
+
   sliderContainers.forEach(function(container) {
     container.classList.toggle("dark-mode");
   });
