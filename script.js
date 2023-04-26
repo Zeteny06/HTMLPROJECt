@@ -48,7 +48,11 @@ function toggleDarkMode() {
         localStorage.removeItem("darkModeEnabled"); // remove dark mode state from local storage
       }
     });
-  
+    if (body.classList.contains("dark-mode")) {
+        localStorage.setItem("darkModeEnabled", "true"); // save dark mode state to local storage
+    } else {
+        localStorage.removeItem("darkModeEnabled"); // remove dark mode state from local storage
+    }
     canvases.forEach(function(canvas) {
       canvas.classList.toggle("text-bg-dark");
     });
@@ -207,7 +211,7 @@ function toggleDarkMode() {
         container.classList.remove("dark-mode");
       });
     }
-  }
+    }
   
 checkDarkModeEnabled();
   
