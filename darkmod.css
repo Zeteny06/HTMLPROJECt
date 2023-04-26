@@ -82,3 +82,7 @@ body.dark-mode {
 .paragraph-background a{
     color: #fff;
 }
+.paragraph-background a:hover{
+    color: #fff;
+    font-size: 105%;
+}
