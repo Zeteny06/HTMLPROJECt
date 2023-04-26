@@ -141,6 +141,7 @@ d-c
 .card{
   border-radius: 25px;
   background-color: #FFF;
+  height: 25rem;
 }
 .image-content,
 .card-content{
@@ -206,12 +207,13 @@ d-c
   font-size: 14px;
   color: #707070;
   text-align: center;
+
 }
 .button{
   border: none;
   font-size: 16px;
   color: #FFF;
-  padding: 8px 16px;
+  padding: 10px 16px;
   background-color: #4070F4;
   border-radius: 6px;
   margin: 14px;
