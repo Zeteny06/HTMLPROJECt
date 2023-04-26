@@ -30,7 +30,7 @@ body {
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     text-align: center;
-    padding: 20px;
+    /* padding: 20px; */
     /* margin-top: 50px */
   }
 
@@ -44,12 +44,15 @@ body {
 
 .wrapper2 .icon{
   position: relative;
+  vertical-align: middle;
   background-color: #ffffff;
   border-radius: 50%;
-  margin: 10px;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
+  margin: 0 2em;
+  margin-top: 1em ;
+  margin-bottom: 0;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
   font-size: 22px;
   display: inline-block;
   align-items: center;
@@ -331,4 +334,7 @@ body {
   50% { transform: translate(-50%, -50%); }
   75% { transform: translate(-49%, -50%); }
   100% { transform: translate(-50%, -50%); }
+}
+.containerBottom{
+  bottom: 0;
 }
