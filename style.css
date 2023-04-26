@@ -127,7 +127,7 @@ body {
   background-color: #de463b;
   color: #ffffff;
 }
-
+d-c
 .slide-container{
   max-width: 1120px;
   width: 100%;
@@ -149,6 +149,9 @@ body {
   align-items: center;
   padding: 10px 14px;
 }
+.card-content{
+  transition: background-image 1.5s ease-in-out;
+}
 .image-content{
   position: relative;
   row-gap: 5px;
@@ -163,6 +166,7 @@ body {
   background: rgb(204,204,204);
   background: linear-gradient(139deg, rgba(204,204,204,1) 0%, rgba(0,212,255,1) 100%);
   border-radius: 25px 25px 0 25px;
+  transition: background-image 1.5s ease-in-out;
 }
 .overlay::before,
 .overlay::after{
