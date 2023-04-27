@@ -284,3 +284,7 @@ d-c
 .cardborder{
   border-color: #555;
 }
+.navbar-brand a{
+  vertical-align: middle;
+  margin-top: 50%;
+}
